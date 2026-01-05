@@ -1,0 +1,6 @@
+import numpy
+import numpy as np
+data = list(map(int, input().split()))
+my_array = np.array(data)
+reshaped_array = np.reshape(my_array, (3, 3))
+print(reshaped_array)
