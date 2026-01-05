@@ -1,0 +1,13 @@
+import numpy
+def solve():
+    n = int(input())
+    matrix = []
+    for _ in range(n):
+        row = list(map(float, input().split()))
+        matrix.append(row)
+    
+    a = numpy.array(matrix)
+    det = numpy.linalg.det(a)
+    print(round(float(det), 2))
+if __name__ == "__main__":
+    solve()
